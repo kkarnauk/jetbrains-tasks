@@ -17,4 +17,19 @@ public class Range {
             return left + "->" + right;
         }
     }
+
+    @Override
+    public boolean equals(Object other) {
+        if (other instanceof Range) {
+            Range that = (Range) other;
+            return left == that.left && right == that.right;
+        }
+
+        return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return left ^ right;
+    }
 }
