@@ -14,7 +14,7 @@ public class Main {
         }
     }
 
-    public static int[] readArray() {
+    private static int[] readArray() {
         Scanner scanner = new Scanner(System.in);
         ArrayList<Integer> values = new ArrayList<>();
 
