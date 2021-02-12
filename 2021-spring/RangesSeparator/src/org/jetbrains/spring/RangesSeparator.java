@@ -5,8 +5,11 @@ import java.util.ArrayList;
 public class RangesSeparator {
     public static ArrayList<Range> separateIntoRanges(int[] values) {
         for (int i = 0; i < values.length - 1; i++) {
-            if (values[i] >= values[i + 1]) {
+            if (values[i] > values[i + 1]) {
                 throw new IllegalArgumentException("Array must be sorted.");
+            }
+            if (values[i] == values[i + 1]) {
+                throw new IllegalArgumentException("All values in array must be unique.");
             }
         }
 
