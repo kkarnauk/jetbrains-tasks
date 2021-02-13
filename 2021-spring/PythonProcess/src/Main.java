@@ -1,5 +1,3 @@
-package org.jetbrains.spring;
-
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -40,7 +38,7 @@ public class Main {
             counter.stopCounting();
         }
 
-        try (var in = new BufferedReader(new InputStreamReader(pythonProcess.getInputStream()))) {
+        try (BufferedReader in = new BufferedReader(new InputStreamReader(pythonProcess.getInputStream()))) {
             System.out.println(in.readLine());
         } catch (IOException e) {
             System.out.println("Cannot write result of python command.");

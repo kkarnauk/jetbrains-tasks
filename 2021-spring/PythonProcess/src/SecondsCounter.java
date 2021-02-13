@@ -1,5 +1,3 @@
-package org.jetbrains.spring;
-
 import java.util.Timer;
 import java.util.TimerTask;
 
