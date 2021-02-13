@@ -1,5 +1,3 @@
-package org.jetbrains.spring;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
